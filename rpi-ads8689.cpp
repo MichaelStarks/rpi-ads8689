@@ -36,7 +36,7 @@ ADS8689::ADS8689(SPIs spi, ChipSelects cs, Ranges range, References reference=In
 	//wait a bit for initialazation to finish
 	struct timespec delay;
 	delay.tv_sec = 1;
-	delay.tv_nsec = 10005;
+	delay.tv_nsec = 2005;
 	nanosleep(&delay, NULL);
 	delay.tv_sec = 0;
 	
